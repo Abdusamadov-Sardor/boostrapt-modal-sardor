@@ -1,0 +1,236 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/bootstrap.min.css">
+  <title>boostrapt-form-sardor</title>
+</head>
+<body>
+  <!-- boostrapt-form-sardor -->
+  
+  <div class="container">
+    
+    <h2 class="text-center my-5">
+      Movies catalog
+    </h2>
+    
+    
+    <div class="row">
+      <div class="col-4">
+        <form action="https://echo.htmlacademy.ru/"  autocomplete="off">
+          <input class="form-control p-2 mb-3" name="input control" type="text" placeholder="ave" aria-label="Default-input" required>
+          <input class="form-control  p-2 mb-3" type="text" placeholder="5" name="input control" aria-label="Default-input">
+          <select class="form-select p-2 mb-3" name="option"   aria-label="Default select">
+            <option  value="1">One</option>
+            <option value="2">two</option>
+            <option value="3">three</option>
+            <option selected value="All">All</option>
+          </select>
+          <select class="form-select p-2 mb-3" name="option" aria-label="Default select" required >
+            <option  value="High">High</option>
+            <option value="Middle">Middle</option>
+            <option value="Low">Low</option>
+            <option selected value="Rating">Rating</option>
+          </select>
+          <button type="submit" class="btn w-100 btn-primary mb-4">Search</button>
+        </form>
+        
+        <h2 class="fw-bold">
+          Bookmarked movies
+        </h2>
+        
+        
+        <div class="row-12 d-flex flex-column mb-5">
+          <div class="col border p-2 ">
+            <p class="fw-bold ms-2 ">Avengers: Infinity War</p>
+            <button type="submit" class="btn btn-danger ms-2 mb-2">
+              Remove
+            </button>
+          </div>
+          <div class="col border-end border-start p-2">
+            <p class="fw-bold ms-2 ">The Avengers</p>
+            <button type="submit" class="btn btn-danger ms-2 mb-2">
+              Remove
+            </button>
+            
+          </div>
+          <div class="col border p-2">
+            <p class="fw-bold ms-2 ">12 Years a Slave</p>
+            <button type="submit" class="btn btn-danger ms-2 mb-2">
+              Remove
+            </button>
+          </div>
+        </div>
+      </div>
+      
+      <div class="col-8 ">
+        <h3>Search result: 39</h3>
+        <div class="alert alert-success w-100" role="alert">
+          Use the form on the left to seach for a movie
+        </div>
+        
+        <div class="row-12 d-flex flex-nowrap ">
+          <div class="col rounded-1 me-2 border border-1 me-2">
+            
+            <div id="carousel-first" class="carousel slide" data-bs-ride="carousel">
+              <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carousel-first" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carousel-first" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carousel-first" data-bs-slide-to="2" aria-label="Slide 3"></button>
+              </div>
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="./image/first.jpg" class="d-block w-100" width="340" height="204" alt="...">
+                </div>
+                <div class="carousel-item">
+                  <img src="./image/second.jpg" class="d-block w-100" width="340" height="204" alt="...">
+                </div>
+                <div class="carousel-item">
+                  <img src="./image/three.jpg" class="d-block w-100" width="340" height="204" alt="...">
+                </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carousel-first" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carousel-first" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+            <ul class="p-3 list-unstyled">
+              <li class="fw-bold fs-5 mb-2">Avengers: Infinity War</li>
+              <li class="d-flex align-items-center mb-4">
+                <img src="./image/calendar-silhouette.png" width="20" height="20" alt="The calendar">
+                <span class="ms-2">2018</span>
+              </li>
+              <li class="d-flex align-items-center mb-4">
+                <img src="./image/star.png" width="20" height="20" alt="">
+                <span class="ms-2">8.7</span>
+              </li>
+              <li>
+                <form action="https://echo.htmlacademy.ru/" method="post">
+                  <button type="button" class="p-2 border-primary text-primary bg-light rounded">Watch trailer</button>
+                  <button type="button" class="p-2 ms-1 border-info text-info bg-light rounded" data-bs-toggle="modal" data-bs-target="#static">More info</button>
+                  <!-- Modal -->
+                  <div class="modal fade" id="static" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="static-Label" aria-hidden="true">
+                    <div class="modal-dialog">
+                      <div class="modal-content">
+                        <div class="modal-header bg-success">
+                          <h5 class="modal-title " id="static-Label">Avngers: Infinity War</h5>
+                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body bg-danger">
+                          The prologue shows us the home life of Clint Barton, aka Hawkeye, aka Ronin (Jeremy Renner). His family vanishes in an instant, victims of the cliffhanger from Infinity War that wiped out half the souls in the universe. Where Infinity War ended with the devastating scene of beloved heroes turning to dust, this scene drops us right back in the devastation as real people vanish. With every new Avengers movie, it's easy to joke about Hawkeye's dispensability to the narrative, but -- not for the first time -- Barton is us. Crap haircut and all.
+                        </div>
+                        <div class="modal-footer bg-secondary">
+                          <button type="button" class="btn btn-dark" data-bs-dismiss="modal">Close</button>
+                          <button type="button" class="btn btn-primary">Understood</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  
+                  <button type="button" class="p-2 ms-1 border-success text-success bg-light rounded">Bookmark</button>
+                </form>
+              </li>
+            </ul>
+            
+            
+            
+          </div>
+          <div class="col rounded-1 border border-1">
+            <div id="carousel-second" class="carousel slide" data-bs-ride="carousel">
+              <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carousel-second" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carousel-second" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carousel-second" data-bs-slide-to="2" aria-label="Slide 3"></button>
+              </div>
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="./image/four.jpg" class="d-block w-100" width="340" height="204" alt="...">
+                </div>
+                <div class="carousel-item">
+                  <img src="./image/five.jpg" class="d-block w-100" width="340" height="204" alt="...">
+                </div>
+                <div class="carousel-item">
+                  <img src="./image/six.jpg" class="d-block w-100" width="340" height="204" alt="...">
+                </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carousel-second" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carousel-second" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+            <ul class="p-3 list-unstyled">
+              <li class="fw-bold fs-5 mb-2">The Avengers</li>
+              <li class="d-flex align-items-center mb-4">
+                <img src="./image/calendar-silhouette.png" width="20" height="20" alt="The calendar">
+                <span class="ms-2">2012</span>
+              </li>
+              <li class="d-flex align-items-center mb-4">
+                <img src="./image/star.png" width="20" height="20" alt="">
+                <span class="ms-2">8.1</span>
+              </li>
+              <li>
+                <form action="https://echo.htmlacademy.ru/" method="post">
+                  <button type="button" class="p-2 border-primary  text-primary bg-light rounded">Watch trailer</button>
+                  
+                  
+                  <button type="button" class="p-2 ms-1 border-info text-info bg-light rounded" data-bs-toggle="modal" data-bs-target="#static-second">More info</button>
+                  <!-- Modal -->
+                  <div class="modal fade" id="static-second" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="static-Labels" aria-hidden="true">
+                    <div class="modal-dialog rounded-2">
+                      <div class="modal-content">
+                        <div class="modal-header bg-dark">
+                          <h5 class="modal-title text-light" id="static-Labels">The Avengers</h5>
+                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body bg-success">
+                          The prologue shows us the home life of Clint Barton, aka Hawkeye, aka Ronin (Jeremy Renner). His family vanishes in an instant, victims of the cliffhanger from Infinity War that wiped out half the souls in the universe. Where Infinity War ended with the devastating scene of beloved heroes turning to dust, this scene drops us right back in the devastation as real people vanish. With every new Avengers movie, it's easy to joke about Hawkeye's dispensability to the narrative, but -- not for the first time -- Barton is us. Crap haircut and all.
+                        </div>
+                        <div class="modal-footer bg-info">
+                          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                          <button type="button" class="btn btn-primary">Understood</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  
+                  
+                  <button type="button" class="p-2 ms-1 border-success text-success bg-light rounded">Bookmark</button>
+                </form>
+              </li>
+            </ul>
+            
+          </div>
+        </div>
+        <nav  aria-label="Default nav">
+          <ul class="pagination pagination mt-5 p-4 justify-content-center">
+            <li class="page-item active" aria-current="page">
+              <span class="page-link">1</span>
+            </li>
+            <li class="page-item"><a class="page-link" href="#">2</a></li>
+            <li class="page-item"><a class="page-link" href="#">3</a></li>
+            <li class="page-item"><a class="page-link" href="#">4</a></li>
+          </ul>
+        </nav>
+        
+      </div>
+      
+      
+    </div>
+    
+    
+    <script src="./bootstrap/js/bootstrap.min.js"></script>
+    
+  </div> 
+</body>
+</html>
